@@ -94,9 +94,26 @@
                     <view key="view" contentMode="scaleToFill" id="FCP-CW-Vea">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-ph-IGk">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hz4-BK-iR9" firstAttribute="trailing" secondItem="lx8-ph-IGk" secondAttribute="trailing" constant="12" id="Mlt-rT-M70"/>
+                            <constraint firstItem="lx8-ph-IGk" firstAttribute="top" secondItem="hz4-BK-iR9" secondAttribute="top" constant="12" id="Y5U-gj-n6J"/>
+                            <constraint firstItem="lx8-ph-IGk" firstAttribute="leading" secondItem="hz4-BK-iR9" secondAttribute="leading" constant="12" id="h9z-5d-TcX"/>
+                            <constraint firstItem="hz4-BK-iR9" firstAttribute="bottom" secondItem="lx8-ph-IGk" secondAttribute="bottom" constant="12" id="sAy-lC-huz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hz4-BK-iR9"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="lx8-ph-IGk" id="qrD-Vq-feY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgR-2Y-l1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
